@@ -7,8 +7,8 @@
 ![](https://img.shields.io/badge/Maven-3.5.2-orange.svg) 
 ![](https://img.shields.io/badge/Licence-MIT-green.svg) 
 
-- 个人博客地址：稍后更新
-- github 地址：稍后更新
+- 个人博客地址：https://www.ltysyn.cn/?p=164
+- csdn 地址：https://blog.csdn.net/ansellyy/article/details/80998551
 
 ## 项目开发环境
 
