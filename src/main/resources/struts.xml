@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	
+	<package name="default" extends="json-default" namespace="/">
+		<action name="login" class="cn.ltysyn.action.MainAction" method="login">
+			<result name="success" type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+			<result name="error" type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+				<param name="result">error</param>
+			</result>
+		</action>
+		<action name="reset" class="cn.ltysyn.action.MainAction" method="reset">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+		<action name="returnSys" class="cn.ltysyn.action.MainAction" method="returnSys">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+		<action name="updateSys" class="cn.ltysyn.action.MainAction" method="updateSys">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+	</package>
+	
+	<package name="course" extends="json-default" namespace="/">
+		<action name="selectAllCourse" class="cn.ltysyn.action.CourseAction" method="selectAllCourse">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+	</package>
+	
+	<package name="student" extends="json-default" namespace="/">
+		<action name="addStudent" class="cn.ltysyn.action.StudentAction" method="addStudent">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+		<action name="findStudents" class="cn.ltysyn.action.StudentAction" method="findStudents">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+		<action name="deleteStudent" class="cn.ltysyn.action.StudentAction" method="deleteStudent">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+		<action name="findStudentById" class="cn.ltysyn.action.StudentAction" method="findStudentById">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+		<action name="updateStudent" class="cn.ltysyn.action.StudentAction" method="updateStudent">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+	</package>
+	
+	<package name="department" extends="json-default" namespace="/">
+		<action name="getAllDepartment" class="cn.ltysyn.action.DepartmentAction" method="getAllDepartment">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+	</package>
+	
+	<package name="teacher" extends="json-default" namespace="/">
+		<action name="addTeacher" class="cn.ltysyn.action.TeacherAction" method="addTeacher">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+		<action name="findTeachers" class="cn.ltysyn.action.TeacherAction" method="findTeachers">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+		<action name="deleteTeacher" class="cn.ltysyn.action.TeacherAction" method="deleteTeacher">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+		
+		<action name="findTeacherById" class="cn.ltysyn.action.TeacherAction" method="findTeacherById">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+
+		<action name="updateTeacher" class="cn.ltysyn.action.TeacherAction" method="updateTeacher">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+	</package>
+	
+	<package name="class" extends="json-default" namespace="/">
+		<action name="findClasses" class="cn.ltysyn.action.ClassAction" method="findClasses">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+		<action name="addClass" class="cn.ltysyn.action.ClassAction" method="addClass">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+		<action name="delClass" class="cn.ltysyn.action.ClassAction" method="delClass">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+		<action name="updateClass" class="cn.ltysyn.action.ClassAction" method="updateClass">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+		<action name="findClasById" class="cn.ltysyn.action.ClassAction" method="findClasById">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+	</package>
+	
+	<package name="teach" extends="json-default" namespace="/">
+		<action name="findAllTeaches" class="cn.ltysyn.action.TeachAction" method="findAllTeaches">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+		<action name="addTeach" class="cn.ltysyn.action.TeachAction" method="addTeach">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+		<action name="findTeachsByTeaId" class="cn.ltysyn.action.TeachAction" method="findTeachsByTeaId">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+		<action name="deleteTeach" class="cn.ltysyn.action.TeachAction" method="deleteTeach">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+	</package>
+	
+	<package name="elective" extends="json-default" namespace="/">
+		<action name="findAllElectives" class="cn.ltysyn.action.ElectiveAction" method="findAllElectives">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+		<action name="addElective" class="cn.ltysyn.action.ElectiveAction" method="addElective">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+		<action name="deleteElective" class="cn.ltysyn.action.ElectiveAction" method="deleteElective">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+	</package>
+
+	<package name="classroom" extends="json-default" namespace="/">
+		<action name="getAllClassrooms" class="cn.ltysyn.action.ClassroomAction" method="getAllClassrooms">
+			<result type="json">
+				<param name="contentType">text/json</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+	</package>
+
+	<!-- 引入资源文件 -->
+	<constant name="struts.custom.i18n.resources" value="messageResource" />
+
+</struts>
