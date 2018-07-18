@@ -1,6 +1,7 @@
 # Course-System-Back
 基于 SSH 框架的学生选课系统，采用前后端分离，这是后端项目
 
+![](https://img.shields.io/badge/Author-AnselLee-blue.svg)
 ![](https://img.shields.io/badge/Spring-5.0.6.RELEASE-brightgreen.svg) 
 ![](https://img.shields.io/badge/Struts-2.5.16-yellow.svg) 
 ![](https://img.shields.io/badge/Hibernate-5.3.0.FINAL-red.svg) 
@@ -9,6 +10,7 @@
 
 - 个人博客地址：https://www.ltysyn.cn/?p=164
 - csdn 地址：https://blog.csdn.net/ansellyy/article/details/80998551
+- 前端项目地址：https://github.com/anselleeyy/Course-System-front
 - 欢迎大家 star 或者 fork
 
 ## 项目开发环境
