@@ -13,6 +13,15 @@
 - 前端项目地址：https://github.com/anselleeyy/Course-System-front
 - 欢迎大家 star 或者 fork
 
+---
+2018.11.14
+
+- 更新了 sql 文件，可在项目运行后执行该脚本
+- sql 文件中仅包含了必要数据，不能确保不会造成页面或业务错误
+- 管理员帐号：{ username: 'admin', password: '123456' }
+- 如有任何问题，欢迎提交 issue。由于该项目时间有点久远，如能解决会尽快解决的，请谅解
+---
+
 ## 项目开发环境
 
 - Spring 5.0.6.RELEASE
