@@ -21,9 +21,9 @@ public class AdminDaoImpl implements IAdminDao {
 	@Override
 	public Admin selectAdminByName(String username) {
 		// TODO Auto-generated method stub
-		
-		String hql = "from Admin";
+		String hql = "from Admin where username = ?0";
 		Query<?> query = sessionFactory.getCurrentSession().createQuery(hql);
+		query.setParameter(0, username);
 		Admin admin = (Admin) query.uniqueResult();
 		return admin;
 	}
