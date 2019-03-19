@@ -1,4 +1,4 @@
-INSERT INTO ssh.admin (id, password, username) VALUES (1, 'e10adc3949ba59abbe56e057f20f883e', 'admin');
+INSERT INTO ssh.admin (id, password, username) VALUES (1, 'E10ADC3949BA59ABBE56E057F20F883E', 'admin');
 
 INSERT INTO ssh.classroom (cla_id, cla_name) VALUES (1, '鹤琴101');
 INSERT INTO ssh.classroom (cla_id, cla_name) VALUES (2, '叔愚204');
